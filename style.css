@@ -21,13 +21,13 @@
 } */
 
 .game-con {
-  height: 25rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 
 .game {
@@ -87,7 +87,114 @@ button {
   background-color: rgb(105, 155, 6);
   cursor: pointer;
   padding: 0.4rem;
-  border-radius: 10%;
+  border-radius: 2rem;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+}
+
+@media (max-width: 650px) {
+  .head {
+    height: 4rem;
+    line-height: 4rem;
+  }
+
+  .game {
+    gap: 1.5rem;
+  }
+
+  .choice {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  img {
+    height: 9.5rem;
+    width: 9.5rem;
+  }
+
+  .points {
+    gap: 0.75rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .choice {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .game {
+    gap: 1.5rem;
+  }
+
+  img {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+
+  h2 {
+    padding: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    color: gray;
+  }
+
+  .points {
+    gap: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .user-p,
+  .comp-p {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 0.4rem;
+    border-radius: 2rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .game {
+    gap: 0.7rem;
+  }
+
+  .choice {
+    height: 6.75rem;
+    width: 6.75rem;
+  }
+
+  img {
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+
+  h2 {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  h3 {
+    color: gray;
+  }
+
+  .points {
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .user-p,
+  .comp-p {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+  }
 }
